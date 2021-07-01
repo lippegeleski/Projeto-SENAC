@@ -65,7 +65,7 @@ namespace Biblioteca.Models
                     consulta = bc.Emprestimos;
                 }
 
-                List<Emprestimo>ListaConsulta = consulta.OrderBy(e => e.DataEmprestimo).ToList();
+                List<Emprestimo>ListaConsulta = consulta.OrderBy(e => e.DataDevolucao).ToList();
 
                 for (int i = 0; i < ListaConsulta.Count; i++)
                 {
